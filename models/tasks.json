@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Errands",
+        "toDos": ["do laundry", "go to the gym", "get groceries"],
+        "urgency": "low"
+    },
+    {
+        "title": "Prepare for trip",
+        "toDos": ["get passport", "clean house", "schedule babysitter", "pack", "plan out itenerary"],
+        "urgency": "medium"
+    },
+    {
+        "title": "Doctor Appointment",
+        "toDos": ["call insurance"],
+        "urgency": "high"
+    }
+]
