@@ -1,5 +1,6 @@
 import express from 'express'
 import noteRouter from './routes/notes.js'
+import taskRouter from './routes/tasks.js'
 const app = express()
 
 app.use(express.json())
@@ -9,6 +10,7 @@ app.get('/', async (req, res) => {
 })
 
 app.use('/', noteRouter)
+app.use('/', taskRouter)
 
 
 
