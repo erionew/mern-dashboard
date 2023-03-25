@@ -1,6 +1,8 @@
 import express from 'express'
 import noteRouter from './routes/notes.js'
 import taskRouter from './routes/tasks.js'
+import dotenv from 'dotenv'
+dotenv.config()
 const app = express()
 
 app.use(express.json())
@@ -13,4 +15,4 @@ app.use('/', noteRouter)
 app.use('/', taskRouter)
 
 
-app.listen(process.env.PORT || 80, () => console.log('server started'))
+app.listen(process.env.PORT , () => console.log('server started'))
