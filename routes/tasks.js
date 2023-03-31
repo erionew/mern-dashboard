@@ -8,4 +8,4 @@ taskRouter.get('/tasks', async (req, res) => {
         res.json(tasks)
 })
 
-export default taskRouter 
+export default taskRouter;
