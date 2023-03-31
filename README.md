@@ -7,7 +7,9 @@ Technologies Used/how:
 2. CRUD/REST API: create the notes and tasks in the backend
 
 ### EXAMPLES OF CODE:
-    //Note Schema/Model
+
+   //Note Schema/Model
+    
       import mongoose from '../db/connection.js'
 
       const Note =  new mongoose.Schema({
@@ -20,6 +22,7 @@ Technologies Used/how:
     import express from 'express'
     
    //Creating Notes router
+    
     import Note from '../models/Note.js'
 
     const noteRouter = express.Router()
@@ -27,11 +30,12 @@ Technologies Used/how:
     noteRouter.get('/notes', async (req, res) => {
         const notes = await Note.find({})
             res.json(notes)
-})
+    })
 
-export default noteRouter 
+    export default noteRouter 
     
 #### How does our App work?
+    //User Experience
         //user clicks sees homepage with date, time, and nav bar
         //on the notes page, the user sees all notes rendered to page and a button to create a new note
         //the new note prompts the user with a form to enter the information
