@@ -1,12 +1,10 @@
-# mern-dashboard-backend
+# MERN (Back End)
 
-#### THE USER EXPERIENCE - Functionality
-
-
+### Functionality
 Technologies Used/how: 
 1. React: components and router/links to pages
-2. Node & Express
-3. 
+2. React Router: links to the different pages in tehe nav bar
+2. CRUD/REST API: create the notes and tasks in the backend
 
 ### EXAMPLES OF CODE:
     //Note Schema/Model
@@ -33,24 +31,8 @@ Technologies Used/how:
 
 export default noteRouter 
     
-#### File Tree:
-
-            /lib
-                /db - the Database
-                    /1 seed.js
-                    /2 connection.js
-                    /4 budget.json
-                /controllers
-                    /1 .js
-                    /2 .js
-                    /3 .js
-                /models - schemas
-                    /1 .js
-                    /2 .js
-                    /3 .js
-                /routes
-                    /1 .js 
-                    /1 .js
-                    /2 .js
-                    /3 .js
-                index.js
+#### How does our App work?
+        //user clicks sees homepage with date, time, and nav bar
+        //on the notes page, the user sees all notes rendered to page and a button to create a new note
+        //the new note prompts the user with a form to enter the information
+        //when the user presses enter the notes are rendered to the page
