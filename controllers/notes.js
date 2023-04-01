@@ -15,13 +15,13 @@ res.json(note)
 })
 },
 edit: (req, res) => {
-Note.findOneAndUpdate({name: req.params.name}, req.body)
+Note.findOneAndUpdate({name: req.params.title}, req.body)
 .then(note => {
 res.json(note)
 })
 },
 delete: (req, res) => {
-Note.findOneAndDelete({name: req.params.name})
+Note.findOneAndDelete({name: req.params.title})
 .then(note => {
 res.json(note)
 })
