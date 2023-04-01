@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node controllers/notes.js",
-    "devStart": "node controllers/notes.js"
+    "start": "node index.js",
+    "devStart": "node index.js"
   },
   "type": "module",
   "repository": {

@@ -9,19 +9,19 @@ res.json(note)
 })
 },
 create: (req, res) => {
-note.create(req.body)
+Note.create(req.body)
 .then(note => {
 res.json(note)
 })
 },
 edit: (req, res) => {
-Note.findOneAndUpdate({name: req.params.title}, req.body)
+Note.findOneAndUpdate({_id: req.params.id}, req.body)
 .then(note => {
 res.json(note)
 })
 },
 delete: (req, res) => {
-Note.findOneAndDelete({name: req.params.title})
+Note.findOneAndDelete({_id: req.params.id})
 .then(note => {
 res.json(note)
 })
