@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node controllers/notes.js",
+    "devStart": "node controllers/notes.js"
   },
   "type": "module",
   "repository": {

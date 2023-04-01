@@ -15,13 +15,13 @@ res.json(task)
 })
 },
 edit: (req, res) => {
-Task.findOneAndUpdate({name: req.params.name}, req.body)
+Task.findOneAndUpdate({name: req.params.title}, req.body)
 .then(task => {
 res.json(task)
 })
 },
 delete: (req, res) => {
-Task.findOneAndDelete({name: req.params.name})
+Task.findOneAndDelete({name: req.params.title})
 .then(task => {
 res.json(task)
 })
