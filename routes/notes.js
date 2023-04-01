@@ -1,11 +1,10 @@
 import express from 'express'
-import Note from '../models/Note.js'
+const noteRouter = express.Router();
+import noteController from "../controllers/notes.js";
 
-const noteRouter = express.Router()
+noteRouter.get("/notes", noteController.index);
+noteRouter.post("/notes", noteController.create);
+noteRouter.put("/notes/:id", noteController.edit);
+noteRouter.delete("/notes/:id", noteController.delete);
 
-noteRouter.get('/notes', async (req, res) => {
-    const notes = await Note.find({})
-        res.json(notes)
-})
-
-export default noteRouter 
+export default noteRouter;
