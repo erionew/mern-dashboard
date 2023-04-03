@@ -8,7 +8,7 @@ Technologies Used/how:
 
 ### EXAMPLES OF CODE:
 
-   //Note Schema/Model
+//Note Schema/Model
     
       import mongoose from '../db/connection.js'
 
@@ -21,8 +21,9 @@ Technologies Used/how:
     
     import express from 'express'
     
-   //Creating Notes router
-    
+//Notes router
+
+    import express from 'express'
     import Note from '../models/Note.js'
 
     const noteRouter = express.Router()
